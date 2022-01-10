@@ -8,7 +8,7 @@
 
 
 
-> Conversor de moedas com opção de dólar americano, euro e bitcoin. Valores fixados com base no dia 31/12/2021.
+> Conversor de moedas com opção de dólar americano, euro e bitcoin. Valores fixados com base no dia 31/12/2021. Att: Adicionado moeda japonesa e chinesa, valores fixados com base no dia 10/01/2022
 
 ### Tecnologias usadas:
  <img align="center" alt="Marcus-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
