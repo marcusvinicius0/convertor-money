@@ -1,17 +1,18 @@
 const button = document.getElementById("convert-button")
 const select = document.getElementById("currency-select")
 
-const dolar = 5.6
-const euro = 6.3
-const iene = 20.240
-const renminbi = 0.89
-const bitcoin = 265000
-
-const convertValues = () => {
+const convertValues = async () => {
     const inputReais = document.getElementById("value").value
     const realValueText = document.getElementById("real-value-text")
     const currencyValueText = document.getElementById("curreny-value-text")
 
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
+
+    const dolar = data.USDBRL.high
+    const euro = data.EURBRL.high
+    // const bitcoin = data.BTCBRL.bid
+
+    console.log(data)
     realValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL",
@@ -31,24 +32,10 @@ const convertValues = () => {
         }).format(inputReais / euro)
     }
 
-    if (select.value === "¥ Iene") {
-        currencyValueText.innerHTML = new Intl.NumberFormat("ja-JP", {
-            style: "currency",
-            currency: "JPY"
-        }).format(inputReais / iene)
-    }
-
-    if (select.value === "元 Renminbi") {
-        currencyValueText.innerHTML = new Intl.NumberFormat("zh-CN", {
-            style: "currency",
-            currency: "CNY"
-        }).format(inputReais / renminbi)
-    }
-
-    if (select.value === "₿ Bitcoin") {
-        currencyValueText.innerHTML = "0"
-        currencyValueText.innerHTML = inputReais / bitcoin
-    }
+    // if (select.value === "₿ Bitcoin") {
+    //     currencyValueText.innerHTML = "0"
+    //     currencyValueText.innerHTML = inputReais / bitcoin
+    // }
 }
 
 const changeCurrency = () => {
@@ -65,20 +52,10 @@ const changeCurrency = () => {
         currencyImage.src = "./assets/euro.svg"
     }
 
-    if (select.value === '¥ Iene') {
-        currencyName.innerHTML = "Iene"
-        currencyImage.src = "./assets/japao.png"
-    }
-
-    if (select.value === '元 Renminbi') {
-        currencyName.innerHTML = "Renminbi"
-        currencyImage.src = "./assets/china.png"
-    }
-
-    if (select.value === '₿ Bitcoin') {
-        currencyName.innerHTML = "Bitcoin"
-        currencyImage.src = "./assets/btc.png"
-    }
+    // if (select.value === '₿ Bitcoin') {
+    //     currencyName.innerHTML = "Bitcoin"
+    //     currencyImage.src = "./assets/btc.png"
+    // }
 
     convertValues() // CADA VEZ QUE EU SELECIONAR ALGUMA MOEDA, CONVERTE AUTOMATICO, SEM PRECISAR CLICAR NO BUTTON
 }
