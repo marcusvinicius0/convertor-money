@@ -10,15 +10,19 @@
 
 > Conversor de moedas consumindo API que puxa valores atualizados em tempo real do Dólar e Euro.
 
-### Tecnologias usadas:
- <img align="center" alt="Marcus-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-   <img align="center" alt="Marcus-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-   <img align="center" alt="Marcus-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+##
+Tecnologias usadas:
+<br>
+<a href="https://pt-br.reactjs.org/docs/getting-started.html" target="blank">React</a>;
+<br>
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="blank">JavaScript</a>;
+<br>
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="blank">HTML</a>;
+<br>
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="blank">CSS</a>;
 
-
-
-
-## 🤝 Colaboradores
+## 
+🤝 Colaboradores
 
 <a href="https://www.linkedin.com/in/marcusviniciusbeghelisantos/" target="_blank">Marcus Vinícius</a>
 
