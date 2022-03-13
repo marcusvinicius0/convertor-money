@@ -13,8 +13,6 @@
 ##
 Tecnologias usadas:
 <br>
-<a href="https://pt-br.reactjs.org/docs/getting-started.html" target="blank">React</a>;
-<br>
 <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="blank">JavaScript</a>;
 <br>
 <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="blank">HTML</a>;
@@ -22,7 +20,7 @@ Tecnologias usadas:
 <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="blank">CSS</a>;
 
 ## 
-🤝 Colaboradores
+🤝 Colaboradores:
 
 <a href="https://www.linkedin.com/in/marcusviniciusbeghelisantos/" target="_blank">Marcus Vinícius</a>
 
